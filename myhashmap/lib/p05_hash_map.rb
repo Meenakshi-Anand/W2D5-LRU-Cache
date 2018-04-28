@@ -13,7 +13,7 @@ class HashMap
   #
   def include?(key)
     bucket = bucket(key)
-    p @store[bucket]
+    @store[bucket]
     @store[bucket].include?(key)
   end
   #
