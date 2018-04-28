@@ -82,14 +82,6 @@ include Enumerable
 
   def update(key, val)
     if include?(key)
-      # remove(key)
-      #
-      # node = Node.new(key,val)
-      # next_node = @head.next
-      #
-      # node.prev, node.next = @head, @head.next
-      # @head.next, next_node.next = node, node
-
       self.each do |node|
         node.val = val if node.key == key
       end
