@@ -15,6 +15,7 @@ class LRUCache
   end
 
   def get(key)
+    if @store.include?
   end
 
   def to_s
